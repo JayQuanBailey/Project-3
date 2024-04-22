@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Music Player</title>
+  <!-- Internal Style Sheet -->
+  <style>
+    /* CSS code goes here */
+   body {
+  font-family: Arial, sans-serif;
+  background: url('https://wallpaperaccess.com/full/2068827.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Center align buttons */
+button {
+  display: inline-block;
+}
+
+/* Adjust message bar alignment */
+#message {
+  display: inline-block;
+  margin: 0 10px; /* Add some spacing between buttons and message bar */
+}
+
+    #cp {
+      margin: 20px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    button {
+      margin: 5px;
+      padding: 8px 12px;
+      font-size: 16px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    #message {
+      font-size: 14px;
+      color: #fff;
+      margin-top: 10px;
+      
+    }
+
+    #player {
+      display: none;
+    }
+  </style>
+  <!-- Include jQuery and app.js -->
+  <script src="//code.jquery.com/jquery.min.js"></script>
+  <script src="app.js"></script>
+</head>
+<body>
+  <div id="cp">
+    <button id="play">Play</button>
+    <button id="stop">Stop</button>
+    <button id="pause">Pause</button>
+    <button id="mute">Mute</button>
+    <button id="unmute">Unmute</button>
+    <button id="volUp">Volume Up</button>
+    <button id="volDown">Volume Down</button>
+    <!-- Message Bar -->
+    <p id="message">Waiting</p>
+  </div>
+  <audio id="player">
+    <source src="music/song1.mp3" type="audio/mpeg">
+  </audio>
+</body>
+</html>
+
